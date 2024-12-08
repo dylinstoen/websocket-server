@@ -7,4 +7,9 @@ function generateRandomString(length) {
     }
     return result.toUpperCase();
 }
-module.exports = { generateRandomString };
+
+function generateUserId() {
+    return 'user_' + Math.random().toString(36).substring(2, 9);
+}
+
+module.exports = { generateRandomString, generateUserId };

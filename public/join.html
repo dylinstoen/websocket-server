@@ -13,10 +13,15 @@
     </head>
 
     <body>
-        <div>
-            <h1>Ready Up</h1>
-            <p id="status-text">Press ready to start the game.</p>
-            <button id="ready-up-button">Ready Up</button>
+        <!-- Join Form -->
+        <div id="room-code-form">
+            <label for="roomcode">Room Code</label>
+            <input type="text" id="form-roomcode" maxlength="5" />
+            <p id="form-roomcode-invalid" class="form-error hidden">Room does not exist</p>
+            <label for="name">Nickname</label>
+            <input type="text" id="form-name" maxlength="10" />
+            <p id="form-name-invalid" class="form-error hidden">Name already taken</p>
+            <button id="join-game-button">Join Game</button>
         </div>
     </body>
 </html>

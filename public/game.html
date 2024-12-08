@@ -1,21 +1,17 @@
 <!doctype html>
-
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>DylBox</title>
+        <title>Game Screen</title>
         <link rel="stylesheet" href="css/index.css">
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/3be0e7a99d.js" crossorigin="anonymous"></script>
         <script src="/socket.io/socket.io.js"></script>
         <script src="/js/main.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
     <body>
-        <div>
-            <h1>Game Screen</h1>
-            <p id="game-status"></p>
+        <div id="game">
+            <h1>Waiting...</h1>
+            <button class="hidden" id="start-game-button">Start Game</button>
         </div>
     </body>
 </html>

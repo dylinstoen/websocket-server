@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SPA Game</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3be0e7a99d.js" ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/app.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Join Section -->
+        <div id="join-section" class="section active">
+            <h1>Join Game</h1>
+            <label type="text" for="room-code" maxlength="4">Room Code:</label>
+            <input type="text" id="room-code" maxlength="5">
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" maxlength="10">
+            <button id="join-button">Join Game</button>
+        </div>
+        <!-- Lobby Section -->
+        <div id="lobby-section" class="section hidden">
+            <h1>Lobby</h1>
+            <div id="lobby-ready-section" class="section active">
+                <h1>Sit back and relax...</h1>
+            </div>
+            <div id="lobby-host-section" class="section hidden">
+                <h1>Everybody in?</h1>
+                <button id="start-button">Start Game</button>
+            </div>
+        </div>
+        <!-- Game Section -->
+        <div id="game-section" class="section hidden">
+            <h1>Game</h1>
+            <p>Game started!</p>
+        </div>
+        <!-- Results Section -->
+        <div id="end-section" class="section hidden">
+            <h1>Results</h1>
+            <button id="play-again-button">Play Again</button>
+        </div>
+    </div>
+</body>
+</html>
